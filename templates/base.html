@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}INTERNSTA - Build Real Skills. Launch Real Products.{% endblock %}</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --font-size: 14px;
+        }
+        
+        html {
+            font-size: var(--font-size);
+        }
+        
+        .bg-grid-pattern {
+            background-image: radial-gradient(circle, #f3f4f6 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-pulse { animation: pulse 2s infinite; }
+        .animate-bounce { animation: bounce 1s infinite; }
+    </style>
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="min-h-screen bg-white">
+    
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-cyan-50/90 to-teal-50/90 backdrop-blur-md border-b border-teal-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+                            <a href="{% url 'website:home' %}">INTERNSTA</a>
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="{% url 'website:for_companies' %}" class="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+                            For Companies
+                        </a>
+                        <a href="{% url 'website:for_candidates' %}" class="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+                            For Candidates
+                        </a>
+                        <a href="{% url 'website:about' %}" class="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+                            About
+                        </a>
+                        <a href="{% url 'website:contact' %}" class="text-gray-700 hover:text-teal-600 transition-colors font-medium">
+                            Contact
+                        </a>
+                    </div>
+                </nav>
+
+                <!-- Desktop Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-teal-600 hover:bg-teal-100 px-4 py-2 rounded-md transition-colors">
+                        Login
+                    </button>
+                    <button class="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-4 py-2 rounded-md shadow-lg transition-all">
+                        Signup
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-teal-600 p-2">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-r from-cyan-50 to-teal-50 border-t border-teal-100">
+                    <a href="{% url 'website:for_companies' %}" class="block px-3 py-2 text-gray-700 hover:text-teal-600 font-medium">
+                        For Companies
+                    </a>
+                    <a href="{% url 'website:for_candidates' %}" class="block px-3 py-2 text-gray-700 hover:text-teal-600 font-medium">
+                        For Candidates
+                    </a>
+                    <a href="{% url 'website:about' %}" class="block px-3 py-2 text-gray-700 hover:text-teal-600 font-medium">
+                        About
+                    </a>
+                    <a href="{% url 'website:contact' %}" class="block px-3 py-2 text-gray-700 hover:text-teal-600 font-medium">
+                        Contact
+                    </a>
+                    <div class="flex flex-col space-y-2 pt-4 border-t border-teal-100">
+                        <button class="text-gray-700 hover:text-teal-600 px-3 py-2 text-left">Login</button>
+                        <button class="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-3 py-2 rounded-md">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-800 to-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">INTERNSTA</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Internsta lets any client connect with any consultant and collaborate 
+                        independently on their own terms.
+                    </p>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Students Links -->
+                <!-- <div>
+                    <h4 class="font-semibold mb-4">For Students</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Find Internships</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Career Resources</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
+                    </ul>
+                </div> -->
+
+                <!-- Companies Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <!-- <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">GDPR</a></li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    © 2025 INTERNSTA. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Newsletter subscription
+        function subscribeNewsletter(email) {
+            fetch('{% url "website:subscribe_newsletter" %}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: 'email=' + encodeURIComponent(email)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Successfully subscribed to newsletter!');
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+        }
+    </script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,590 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Main Content (2/3 width) -->
+        <div class="lg:col-span-2 space-y-16">
+            
+            <!-- Hero Section -->
+            <section class="relative py-20 overflow-hidden bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 rounded-2xl">
+                <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+                <div class="max-w-6xl mx-auto px-8 relative">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-8">
+                            <div class="space-y-6">
+                                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                                    Build Real Skills.
+                                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
+                                        Launch Real Products.
+                                    </span>
+                                </h1>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/80 backdrop-blur-sm border border-orange-200 rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                    <div class="space-y-4">
+                                        <div class="h-12 w-12 bg-gradient-to-br from-orange-100 to-red-100 rounded-lg flex items-center justify-center">
+                                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-gray-900">For Companies</h3>
+                                        <p class="text-gray-600 text-sm leading-relaxed">
+                                            Have a project and want freelance talent? Post a job and find the best fit for your project. 
+                                            We connect you with skilled professionals ready to deliver results.
+                                        </p>
+                                        <button class="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-2 rounded-md transition-all">
+                                            Post a Project
+                                            <svg class="ml-2 h-4 w-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="p-6 bg-white/80 backdrop-blur-sm border border-orange-200 rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                                    <div class="space-y-4">
+                                        <div class="h-12 w-12 bg-gradient-to-br from-orange-100 to-red-100 rounded-lg flex items-center justify-center">
+                                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-gray-900">For Candidates</h3>
+                                        <p class="text-gray-600 text-sm leading-relaxed">
+                                            Want to work on real projects while you study? Browse through hundreds of projects 
+                                            and gain practical experience that matters.
+                                        </p>
+                                        <button class="w-full border-2 border-orange-500 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md transition-colors">
+                                            Browse Projects
+                                            <svg class="ml-2 h-4 w-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center lg:justify-end">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1610188794435-e263eb62a516?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBlb3BsZSUyMHdvcmtpbmclMjB0b2dldGhlciUyMGlsbHVzdHJhdGlvbnxlbnwxfHx8fDE3NTY3NDI4NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                     alt="People working together on projects"
+                                     class="w-full max-w-lg h-auto rounded-2xl shadow-2xl" />
+                                <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-80 animate-pulse"></div>
+                                <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-400 rounded-full opacity-60 animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="py-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Trusted by Students and Companies Worldwide
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Join thousands of successful students who have launched their careers through our platform
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 mb-2">
+                            250
+                        </div>
+                        <div class="font-semibold text-gray-700 mb-1">
+                            Active Students
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            Building real skills
+                        </div>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h1a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 mb-2">
+                            13
+                        </div>
+                        <div class="font-semibold text-gray-700 mb-1">
+                            Partner Companies
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            Hiring top talent
+                        </div>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 mb-2">
+                            29
+                        </div>
+                        <div class="font-semibold text-gray-700 mb-1">
+                            Success Rate
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            Job placement
+                        </div>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"></path>
+                            </svg>
+                        </div>
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 mb-2">
+                            250
+                        </div>
+                        <div class="font-semibold text-gray-700 mb-1">
+                            Global Reach
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            Days of the year
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="py-12 px-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="space-y-4">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                                Get Real-World Experience,
+                                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
+                                    Early
+                                </span>
+                            </h2>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Don't wait until after graduation to start building your career. Join projects that matter 
+                                and gain the practical experience that employers are looking for.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-700">Work on real industry projects</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-700">Build a professional portfolio</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-700">Gain mentorship from experts</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="h-5 w-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-700">Earn while you learn</span>
+                            </div>
+                        </div>
+
+                        <button class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-lg transition-all">
+                            Explore Projects
+                            <svg class="ml-2 h-4 w-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGxlYXJuaW5nJTIwZXhwZXJpZW5jZXxlbnwxfHx8fDE3NTY3NDI4NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                             alt="Students gaining experience"
+                             class="rounded-2xl shadow-lg" />
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-70 animate-bounce"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="py-16">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        How Internsta Works
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Getting started with your career journey has never been easier. Follow these simple steps to find your perfect internship.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border border-orange-200 bg-gradient-to-br from-white to-orange-50 rounded-lg">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                                <svg class="h-8 w-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                                </svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                1
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Sign Up</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Create your profile and showcase your skills, experience, and portfolio to stand out to potential employers.
+                        </p>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border border-orange-200 bg-gradient-to-br from-white to-orange-50 rounded-lg">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                                <svg class="h-8 w-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                2
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Match Opportunities</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Browse through curated internship opportunities or let our AI-powered system match you with perfect fits.
+                        </p>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border border-orange-200 bg-gradient-to-br from-white to-orange-50 rounded-lg">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                                <svg class="h-8 w-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                3
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Get in Communication</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Connect directly with hiring managers and teams. Schedule interviews and discuss project requirements.
+                        </p>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105 border border-orange-200 bg-gradient-to-br from-white to-orange-50 rounded-lg">
+                        <div class="relative mb-6">
+                            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                                <svg class="h-8 w-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                4
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Get Hired</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Start your internship journey and gain real-world experience while building valuable professional connections.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hiring Section -->
+            <section class="py-12 px-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1579389248774-07907f421a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG1vZGVybiUyMG9mZmljZXxlbnwxfHx8fDE3NTY3MTkzMTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                             alt="Team collaboration in modern office"
+                             class="rounded-2xl shadow-lg" />
+                        <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-70 animate-pulse"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="space-y-4">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                                Build Faster.
+                                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
+                                    Hire Smarter.
+                                </span>
+                            </h2>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Connect with talented students and recent graduates who are eager to contribute to your projects. 
+                                Find the perfect match for your team's needs.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-10 h-10 bg-gradient-to-br from-orange-100 to-red-100 rounded-lg flex items-center justify-center">
+                                        <svg class="h-5 w-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900">Faster Hiring</h3>
+                                        <p class="text-sm text-gray-600">Reduce time-to-hire by 60% with our streamlined process</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-10 h-10 bg-gradient-to-br from-orange-100 to-red-100 rounded-lg flex items-center justify-center">
+                                        <svg class="h-5 w-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900">Cost Effective</h3>
+                                        <p class="text-sm text-gray-600">Save on recruitment costs while finding quality talent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-10 h-10 bg-gradient-to-br from-orange-100 to-red-100 rounded-lg flex items-center justify-center">
+                                        <svg class="h-5 w-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900">Pre-vetted Talent</h3>
+                                        <p class="text-sm text-gray-600">Access a pool of skilled candidates ready to contribute</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-lg transition-all">
+                                Browse Profiles
+                                <svg class="ml-2 h-4 w-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <button class="border-2 border-orange-500 text-orange-600 hover:bg-orange-50 px-6 py-3 rounded-lg transition-colors">
+                                Company Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="py-12 px-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Why Internsta?
+                    </h2>
+
+                    <!-- Video/Image placeholder -->
+                    <div class="relative max-w-4xl mx-auto mb-8">
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl aspect-video flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-red-500/20"></div>
+                            <button class="bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm border border-white/30 rounded-full h-20 w-20 flex items-center justify-center transition-all">
+                                <svg class="h-8 w-8 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1M9 16h6m-7 4h8a2 2 0 002-2V6a2 2 0 00-2-2H8a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-lg font-semibold">See How Internsta Works</h3>
+                                <p class="text-sm opacity-80">Watch our 2-minute demo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                        We're not just another job board. We're a comprehensive platform designed specifically for students 
+                        and early-career professionals to bridge the gap between education and real-world experience.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Secure & Trusted</h3>
+                        <p class="text-sm text-gray-600">Your data and privacy are our top priority with enterprise-grade security</p>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Lightning Fast</h3>
+                        <p class="text-sm text-gray-600">Get matched with opportunities in minutes, not months</p>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Student Focused</h3>
+                        <p class="text-sm text-gray-600">Built specifically for students by people who understand your journey</p>
+                    </div>
+
+                    <div class="p-6 text-center hover:shadow-lg transition-shadow bg-white/70 backdrop-blur-sm border border-orange-200 rounded-lg">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Proven Results</h3>
+                        <p class="text-sm text-gray-600">Thousands of successful placements and career launches</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-lg transition-all">
+                        Get Started Today
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar - Internship Listings (1/3 width) -->
+        <div class="lg:col-span-1">
+            <div class="sticky top-24 space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-orange-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
+                            INTERNSHIPS FOR YOU
+                        </span>
+                    </h3>
+                    
+                    <!-- Internship listings -->
+                    <div class="space-y-4">
+                        {% for internship in featured_internships %}
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <h4 class="font-semibold text-gray-900 mb-2">{{ internship.title }}</h4>
+                            <p class="text-sm text-gray-600 mb-1">{{ internship.company }}</p>
+                            <p class="text-sm text-gray-500 mb-2">{{ internship.location }}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm font-medium text-orange-600">{{ internship.salary }}</span>
+                                <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded-full">{{ internship.type }}</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="mt-6 text-center">
+                        <button class="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-2 rounded-lg transition-all">
+                            View All Internships
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter Section -->
+<section class="py-20 bg-gradient-to-br from-orange-600 to-red-600 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Column - Content -->
+            <div class="text-white">
+                <h2 class="text-4xl font-bold mb-6 leading-tight">
+                    Get the Latest <span class="text-yellow-300">Internships</span>
+                </h2>
+                
+                <p class="text-xl text-orange-100 mb-8">
+                    Join over 50,000 students who receive weekly updates about new internships, 
+                    career tips, and exclusive opportunities from top companies.
+                </p>
+
+                <form onsubmit="handleNewsletterSubmit(event)" class="flex flex-col sm:flex-row gap-4 mb-6">
+                    <div class="flex-1">
+                        <input type="email" 
+                               id="newsletter-email"
+                               placeholder="Enter your email address"
+                               class="w-full bg-white/10 border border-white/20 text-white placeholder:text-orange-100 focus:bg-white/20 px-4 py-3 rounded-lg"
+                               required />
+                    </div>
+                    <button type="submit" class="bg-yellow-400 text-orange-900 hover:bg-yellow-300 px-6 py-3 rounded-lg whitespace-nowrap transition-colors">
+                        <svg class="mr-2 h-4 w-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Subscribe Now
+                    </button>
+                </form>
+
+                <div class="flex items-center gap-4 text-sm text-orange-100">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                        <span>Weekly updates</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                        <span>No spam, unsubscribe anytime</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Success Stories -->
+            <div class="space-y-6">
+                <div class="p-6 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-lg">
+                    <div class="flex items-start gap-4">
+                        <img src="https://images.unsplash.com/photo-1675716921224-e087a0cca69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG5ldHdvcmtpbmclMjBldmVudHxlbnwxfHx8fDE3NTY2ODM0ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                             alt="Business networking"
+                             class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold mb-2">For Candidates: Build Real Skills, Get Real Jobs</h3>
+                            <p class="text-orange-100 text-sm">
+                                Access to exclusive internships and direct connections with hiring managers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-lg">
+                    <div class="flex items-start gap-4">
+                        <img src="https://images.unsplash.com/photo-1624555130296-e551faf8969b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVhbSUyMG1lZXRpbmd8ZW58MXx8fHwxNzU2NzI2MTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                             alt="Team collaboration"
+                             class="w-16 h-16 rounded-full object-cover" />
+                        <div>
+                            <h3 class="font-semibold mb-2">For Companies: Find Top-Tier Students</h3>
+                            <p class="text-orange-100 text-sm">
+                                Connect with pre-screened, motivated students ready to contribute to your projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+    const email = document.getElementById('newsletter-email').value;
+    subscribeNewsletter(email);
+    document.getElementById('newsletter-email').value = '';
+}
+</script>
+{% endblock %}

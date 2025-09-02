@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}About - INTERNSTA{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            About
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+                INTERNSTA
+            </span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            We're bridging the gap between education and real-world experience, 
+            connecting talented students with innovative companies.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" 
+                 alt="Team working together" 
+                 class="rounded-2xl shadow-lg w-full" />
+        </div>
+        <div class="space-y-6">
+            <h2 class="text-3xl font-bold text-gray-900">Our Mission</h2>
+            <p class="text-lg text-gray-600">
+                At INTERNSTA, we believe that practical experience is the key to career success. 
+                We're committed to providing students with opportunities to work on real projects 
+                while helping companies find fresh talent and innovative perspectives.
+            </p>
+            <p class="text-lg text-gray-600">
+                Our platform connects ambition with opportunity, creating meaningful partnerships 
+                that benefit both students and employers.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 mb-16">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-teal-600 mb-2">365+</div>
+                <div class="text-gray-700">Active Students</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-teal-600 mb-2">13+</div>
+                <div class="text-gray-700">Partner Companies</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-teal-600 mb-2">29%</div>
+                <div class="text-gray-700">Success Rate</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Join Our Community?</h2>
+        <p class="text-lg text-gray-600 mb-8">
+            Whether you're a student looking for experience or a company seeking fresh talent, 
+            we're here to help you succeed.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button class="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-8 py-3 rounded-lg transition-all">
+                Get Started Today
+            </button>
+            <button class="border-2 border-teal-500 text-teal-600 hover:bg-teal-50 px-8 py-3 rounded-lg transition-colors">
+                Contact Us
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
